@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "cryptkeeper"
-version = "0.1.0"
+version = "0.2.0"
 description = "TLS/SSL misconfiguration scanner for bug bounty and pentesting"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -28,3 +28,4 @@ packages = ["src/cryptkeeper"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+norecursedirs = ["src", ".git", "dist", "build", "*.egg-info"]
